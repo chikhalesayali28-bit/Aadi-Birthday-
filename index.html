@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Aadi — 8 October ❤️</title>
+<meta name="theme-color" content="#080607">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+:root{--bg:#080607;--wine:#5b1729;--wine2:#8b2945;--gold:#e8c982;--cream:#fff7ea;--muted:#c9b9b7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:Montserrat,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 20% 10%,#6c1e3422,transparent 30%),radial-gradient(circle at 80% 90%,#b88a2720,transparent 32%);z-index:-1}
+button{font:inherit}.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px;position:relative}
+.opening{background:linear-gradient(180deg,#050405cc,#080607 85%),url('memory_8.jpg') center/cover fixed}
+.opening-inner{text-align:center;max-width:820px;animation:rise 1.4s ease both}
+.kicker{letter-spacing:.35em;text-transform:uppercase;color:var(--gold);font-size:11px;font-weight:700}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:600;margin:.2em 0}
+.hero-title{font-size:clamp(64px,14vw,150px);line-height:.78;letter-spacing:-.05em}
+.hero-title span{color:var(--gold);font-style:italic}
+.subtitle{color:#eee1df;max-width:620px;margin:28px auto;line-height:1.8;font-size:14px}
+.btn{border:1px solid #e8c98277;background:linear-gradient(135deg,#5b1729,#260b14);color:white;border-radius:999px;padding:14px 24px;cursor:pointer;transition:.3s;box-shadow:0 12px 35px #0008}
+.btn:hover{transform:translateY(-3px);box-shadow:0 18px 45px #000b;border-color:var(--gold)}
+.scrollhint{position:absolute;bottom:25px;color:#bbaaa8;font-size:10px;letter-spacing:.25em;text-transform:uppercase}
+.progress{position:fixed;top:0;left:0;height:3px;background:var(--gold);width:0;z-index:20}
+nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:19;background:#090708c9;border:1px solid #ffffff18;border-radius:999px;padding:7px;backdrop-filter:blur(12px);display:flex;gap:4px}
+nav a{color:#ddd;text-decoration:none;font-size:10px;letter-spacing:.08em;padding:9px 12px;border-radius:999px}
+nav a:hover{background:#ffffff12;color:var(--gold)}
+.section{padding:110px 7vw;max-width:1250px;margin:auto}
+.center{text-align:center}.eyebrow{color:var(--gold);letter-spacing:.25em;text-transform:uppercase;font-size:10px;font-weight:700}
+.title{font-size:clamp(42px,7vw,78px);line-height:.95;margin:12px 0 24px}.lead{max-width:720px;margin:0 auto;color:var(--muted);line-height:1.9;font-size:14px}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.story img{width:100%;height:620px;object-fit:cover;border-radius:24px;filter:saturate(.88);box-shadow:0 30px 80px #0008}
+.story-copy{padding:10px}.story-copy h3{font-size:40px}.story-copy p{color:#d3c6c4;line-height:1.9;font-size:14px}.signature{font-family:"Cormorant Garamond";font-style:italic;font-size:30px;color:var(--gold);margin-top:30px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:45px}.card{background:linear-gradient(145deg,#ffffff09,#ffffff03);border:1px solid #ffffff14;border-radius:22px;padding:28px;min-height:190px}.card .icon{font-size:28px}.card h3{font-size:28px}.card p{color:#c6b9b7;font-size:13px;line-height:1.7}
+.gallery{columns:3 220px;column-gap:15px;margin-top:45px}.gallery img{width:100%;display:block;margin:0 0 15px;border-radius:18px;break-inside:avoid;filter:saturate(.9);transition:.35s}.gallery img:hover{transform:scale(1.015);filter:saturate(1.05)}
+.letter{max-width:850px;margin:45px auto 0;background:linear-gradient(145deg,#fff8ee0b,#5b17290b);border:1px solid #e8c98230;border-radius:28px;padding:42px;box-shadow:0 25px 80px #0007}.letter p{font-family:"Cormorant Garamond";font-size:24px;line-height:1.55;color:#f4e8e3}
+.count{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:38px 0}.unit{width:100px;padding:18px 10px;border:1px solid #ffffff14;border-radius:18px;background:#ffffff08}.num{font-family:"Cormorant Garamond";font-size:44px;color:var(--gold);display:block}.lab{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#b9a8a5}
+.reveal{min-height:70vh;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center}.gift{font-size:75px;cursor:pointer;filter:drop-shadow(0 15px 30px #000);transition:.4s}.gift:hover{transform:translateY(-8px) rotate(-4deg)}.secret{max-width:650px;display:none;animation:rise .8s ease}.secret.show{display:block}.secret h2{font-size:64px;color:var(--gold)}.secret p{font-family:"Cormorant Garamond";font-size:28px;line-height:1.5}
+footer{text-align:center;padding:55px 20px;color:#857878;font-size:10px;letter-spacing:.12em}
+.heart{position:fixed;bottom:-30px;left:var(--x);font-size:var(--s);animation:float var(--d) linear forwards;opacity:.7;z-index:10;pointer-events:none}
+@keyframes float{to{transform:translateY(-110vh) translateX(var(--dx)) rotate(25deg);opacity:0}}
+@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+@media(max-width:760px){nav a{display:none}nav a:first-child,nav a:last-child{display:block}.story{grid-template-columns:1fr}.story img{height:480px}.cards{grid-template-columns:1fr}.section{padding:90px 20px}.letter{padding:28px}.letter p{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<nav><a href="#home">HOME</a><a href="#story">OUR STORY</a><a href="#memories">MEMORIES</a><a href="#letter">LETTER</a><a href="#surprise">SURPRISE</a></nav>
+
+<section class="screen opening" id="home">
+  <div class="opening-inner">
+    <div class="kicker">A little birthday film made with love</div>
+    <div class="hero-title">Hey <span>Aadi</span>…</div>
+    <p class="subtitle">I made you a tiny corner of the internet because one birthday message could never hold everything I feel for you.</p>
+    <button class="btn" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">Start our little story ♥</button>
+  </div>
+  <div class="scrollhint">scroll slowly ↓</div>
+</section>
+
+<section class="section" id="story">
+  <div class="story">
+    <img src="memory_8.jpg" alt="Aadi and me">
+    <div class="story-copy">
+      <div class="eyebrow">Chapter 01 · My favourite person</div>
+      <h2 class="title">Somehow, life got better with you in it.</h2>
+      <p>Aadi, you are the person who can make me smile when I am annoyed, make ordinary days feel special, and somehow still look cute when you're being completely impossible.</p>
+      <p>I don't just love the big moments. I love the tiny things — the looks, the jokes, the random conversations, the teasing, the comfort, and the feeling that there is someone who feels like home.</p>
+      <div class="signature">— your girl, always ♡</div>
+    </div>
+  </div>
+</section>
+
+<section class="section center">
+  <div class="eyebrow">Chapter 02 · Things I secretly adore</div>
+  <h2 class="title">Three reasons you're stuck with me.</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">🖤</div><h3>Your heart</h3><p>The way you care, even when you don't say much. That soft side of you is one of my favourite things.</p></div>
+    <div class="card"><div class="icon">😌</div><h3>Your face</h3><p>Yes, I'm officially admitting it: I can look at your photos for an unreasonable amount of time.</p></div>
+    <div class="card"><div class="icon">😂</div><h3>Your nonsense</h3><p>Our silly moments, teasing and little fights somehow become memories I never want to lose.</p></div>
+  </div>
+</section>
+
+<section class="section" id="memories">
+  <div class="center">
+    <div class="eyebrow">Chapter 03 · Us</div>
+    <h2 class="title">A few frames of my favourite story.</h2>
+    <p class="lead">Every picture holds a tiny piece of us — and somehow I still want a thousand more.</p>
+  </div>
+  <div class="gallery">
+    <img src="memory_1.jpg"><img src="memory_2.jpg"><img src="memory_3.jpg"><img src="memory_4.jpg"><img src="memory_5.jpg"><img src="memory_6.jpg"><img src="memory_7.jpg"><img src="memory_8.jpg"><img src="memory_9.jpg"><img src="memory_10.jpg">
+  </div>
+</section>
+
+<section class="section" id="letter">
+  <div class="center">
+    <div class="eyebrow">Chapter 04 · Open when you're smiling</div>
+    <h2 class="title">A letter for my Aadi.</h2>
+  </div>
+  <div class="letter">
+    <p>Happy Birthday, my Aadi. ❤️</p>
+    <p>I hope you know how special you are to me. I may not always know the perfect words, but my heart knows exactly where it wants to be.</p>
+    <p>Thank you for the laughter, the memories, the patience, the annoying teasing, the hugs, the little moments and all the versions of us that brought us here.</p>
+    <p>And just so we're clear… you are getting older, but unfortunately for you, you're not getting rid of me that easily. 😌🖤</p>
+    <p>On your birthday, I only wish that life gives you everything your heart deserves — happiness, peace, success, and countless reasons to smile.</p>
+    <p>And selfishly… I hope I get to be beside you for many, many more birthdays.</p>
+    <p>Happy birthday to my favourite boy. I love you more than this little website can ever explain.</p>
+    <div class="signature">Forever yours, ♡</div>
+  </div>
+</section>
+
+<section class="section center">
+  <div class="eyebrow">8 October · Your day</div>
+  <h2 class="title">The countdown to Aadi Day 🎂</h2>
+  <div class="count">
+    <div class="unit"><span class="num" id="days">00</span><span class="lab">Days</span></div>
+    <div class="unit"><span class="num" id="hours">00</span><span class="lab">Hours</span></div>
+    <div class="unit"><span class="num" id="mins">00</span><span class="lab">Minutes</span></div>
+    <div class="unit"><span class="num" id="secs">00</span><span class="lab">Seconds</span></div>
+  </div>
+</section>
+
+<section class="screen reveal" id="surprise">
+  <div class="eyebrow">Final chapter · One last thing</div>
+  <h2 class="title">I kept one surprise hidden.</h2>
+  <div class="gift" onclick="reveal()">🎁</div>
+  <p style="color:#a99b99;font-size:11px;letter-spacing:.15em;text-transform:uppercase">tap the gift</p>
+  <div class="secret" id="secret">
+    <h2>Aadi, look at me. 🖤</h2>
+    <p>No matter how many birthdays pass, I hope we keep finding our way back to laughter, love, silly fights, long hugs and each other.</p>
+    <p><strong>Happy Birthday, my Aadi.</strong><br>Here's to you, to me, and to all the chapters we haven't lived yet. ❤️</p>
+  </div>
+</section>
+
+<footer>MADE WITH TOO MUCH LOVE · FOR AADI · 8 OCTOBER ♡</footer>
+
+<script>
+const target=new Date("2026-10-08T00:00:00+05:30");
+function tick(){
+ const now=new Date(), d=Math.max(0,target-now);
+ const s=Math.floor(d/1000);
+ document.getElementById('days').textContent=String(Math.floor(s/86400)).padStart(2,'0');
+ document.getElementById('hours').textContent=String(Math.floor(s%86400/3600)).padStart(2,'0');
+ document.getElementById('mins').textContent=String(Math.floor(s%3600/60)).padStart(2,'0');
+ document.getElementById('secs').textContent=String(s%60).padStart(2,'0');
+}
+setInterval(tick,1000);tick();
+function reveal(){document.getElementById('secret').classList.add('show');document.querySelector('.gift').style.display='none';for(let i=0;i<18;i++){const h=document.createElement('div');h.className='heart';h.textContent='♥';h.style.setProperty('--x',Math.random()*100+'vw');h.style.setProperty('--s',(12+Math.random()*20)+'px');h.style.setProperty('--d',(3+Math.random()*4)+'s');h.style.setProperty('--dx',(Math.random()*120-60)+'px');document.body.appendChild(h);setTimeout(()=>h.remove(),7000)}}
+window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight;document.getElementById('progress').style.width=(scrollY/h*100)+'%'});
+</script>
+</body>
+</html>
